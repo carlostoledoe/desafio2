@@ -8,4 +8,4 @@ class Tarea(models.Model):
 class SubTarea(models.Model):
     descripcion = models.TextField(default='')
     eliminada = models.BooleanField(default=False)
-    tarea = models.ForeignKey(Tarea, related_name='subtarea', on_delete=models.CASCADE )
+    tarea = models.ForeignKey(Tarea, related_name='subtareas', on_delete=models.CASCADE )
